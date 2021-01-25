@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn personalWeb-DJANGO.wsgi --log-file -
