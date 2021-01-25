@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/main.css' %}">
+<script src="{% static 'homepage/main.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<head>
+    {% if title%}
+    <title>SW - {{title}}</title>
+    {% else %}
+    <title>SW</title>
+    {% endif %}
+
+</head>
+
+<body onload="loadNavBar()">
+
+    <nav>
+        <ul>
+            <li>
+                <a href='/'>
+                    <img src='{% static "homepage/home-icon.png" %}'></a>
+            </li>
+            <li>
+                <a href='/about'>
+                    <img src='{% static "homepage/about-icon.png" %}'></a>
+            </li>
+            <li>
+                <a href='#'>
+                    <img src='{% static "homepage/gallery-icon.png" %}'></a>
+            </li>
+            <li>
+                <a href='https://github.com/Wxshy/Code'>
+                    <img src='{% static "homepage/code-icon.png" %}'></a>
+            </li>
+            <li>
+                <a href='#'>
+                    <img src='{% static "homepage/contact-icon.png" %}'></a>
+            </li>
+        </ul>
+    </nav>
+    <main role='main' class="container ">
+        {%block content%}{%endblock%}
+    </main>
+</body>
+
+</html>
