@@ -26,7 +26,7 @@ ROOT_URLCONF = 'personal.personal.urls'
 SECRET_KEY = '&$8^^($z^g^fv1-rw-u1df&s(h%p2kouo)m6=^+r2c_d!!o3%z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'homepage.apps.HomepageConfig',
+    'homepage.apps.HomepageConfig',
 ]
 
 MIDDLEWARE = [
