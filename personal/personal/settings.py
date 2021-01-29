@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'personal.homepage.apps.HomepageConfig',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +54,7 @@ MIDDLEWARE = [
 
 ]
 
-ROOT_URLCONF = 'personal.urls'
+ROOT_URLCONF = 'personal.personal.urls'
 
 TEMPLATES = [
     {
